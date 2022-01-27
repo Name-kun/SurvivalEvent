@@ -69,6 +69,7 @@ public class SurvivalEventListener implements Listener {
                         p.sendMessage((playerCount + 1) + "箇所目の納品を完了しました！");
                         String returnItemName = returnItem(playerCount).getItemMeta().hasDisplayName() ? returnItem(playerCount).getItemMeta().getDisplayName() : translator.dictionary(returnItem(playerCount).getType());
                         p.sendMessage(returnItemName + org.bukkit.ChatColor.RESET + returnItem(playerCount).getAmount() + "個を入手しました！");
+                        response(p, playerCount);
                         if (playerCount == 9)
                             p.sendMessage("§6§l全ての納品クエストが完了しました！");
                         p.getInventory().addItem(returnItem(playerCount));
@@ -232,6 +233,49 @@ public class SurvivalEventListener implements Listener {
                 break;
         }
         return item;
+    }
+
+    //返答
+    void response(Player p, int i) {
+        List<String> responses = new ArrayList<>();
+        switch (i) {
+            case 0:
+                responses.add("§aありがとねー");
+                responses.add("§a今年もチョコめっちゃ貰えたらええなー");
+                break;
+            case 1:
+                responses.add("§aありがとう～");
+                responses.add("§aあれ、そういえば淡路島って人住めるの？");
+                break;
+            case 2:
+                responses.add("§aあっ、ありがと～");
+                responses.add("§aうちのキツネたちにもチョコあげないとな...");
+                break;
+            case 3:
+                responses.add("§aどもー");
+                responses.add("§a腹が減っては露天は出来ぬ、なんちって");
+                break;
+            case 4:
+                responses.add("§aありがたや～");
+                responses.add("§aチョコ欲しいけど無理はせんでや～");
+                break;
+            case 5:
+            case 7:
+                responses.add("§athx");
+                break;
+            case 6:
+                responses.add("§aあっ、どうも～");
+                responses.add("§aチョコってなんだっけ...？");
+                break;
+            case 8:
+                responses.add("§aありがとー");
+                responses.add("§aチョコくれるんも嬉しいんやけど、それよかFF一緒にやらへん？");
+                break;
+            case 9:
+                responses.add("§aありがとう");
+                responses.add("§aチョコ１個につき髪の毛が１本生える鯖主はこちらです");
+        }
+        for (String response : responses) p.sendMessage(response);
     }
 
 }
