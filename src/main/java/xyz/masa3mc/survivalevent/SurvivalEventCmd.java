@@ -108,7 +108,7 @@ public class SurvivalEventCmd implements Listener, CommandExecutor {
                 lore.addAll(Arrays.asList("§aB_Kuroさんの隣にいたfalled_canさんに届けに行こう。", "§a見た目も似ているしもしかして同一人物...？"));
                 break;
             case 8:
-                lore.addAll(Arrays.asList("§a自分のユーザーショップで集客をしているAnilineBlackさんに届けに行こう。", "異様な摩天楼がトレードマーク...？"));
+                lore.addAll(Arrays.asList("§a自分のユーザーショップで集客をしているAnilineBlackさんに届けに行こう。", "§a異様な摩天楼がトレードマーク...？"));
                 break;
             case 9:
                 lore.addAll(Arrays.asList("§aロビーワールドにいるNameKunさんに届けに行こう。", "§aあれ、一番最初のuz_masa3の隣にいなかったっけ？"));

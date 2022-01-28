@@ -164,8 +164,7 @@ public class SurvivalEventListener implements Listener {
                 meta = item.getItemMeta();
                 meta.setDisplayName("§4§lチョコレートインゴット");
                 meta.setLore(Arrays.asList("チョコレートで出来た延べ棒。", "硬すぎて食べることはできない。"));
-                meta.addEnchant(Enchantment.LUCK, 1, true);
-                meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+                meta.addEnchant(Enchantment.SILK_TOUCH, 1, true);
                 item.setItemMeta(meta);
                 break;
             case 4:
