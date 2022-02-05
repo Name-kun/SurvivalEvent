@@ -87,10 +87,10 @@ public class SurvivalEventCmd implements Listener, CommandExecutor {
                 lore.addAll(Arrays.asList("§aロビーワールドにいるuz_masa3さんに届けに行こう。", "§aこじんまりとしたお店にテラス席が目印だ。"));
                 break;
             case 1:
-                lore.addAll(Arrays.asList("§a大きなインターチェンジの近くにいるBlock_jack55さんに届けに行こう。", "§aX:1500 Y:-900のあたりのようだ。"));
+                lore.addAll(Arrays.asList("§a大きなインターチェンジの近くにいるBlock_jack55さんに届けに行こう。", "§aX:1500 Z:-900のあたりのようだ。"));
                 break;
             case 2:
-                lore.addAll(Arrays.asList("§a自宅のそばにいるYuzumochiiさんに届けに行こう。", "§aX:-1100 Y:-100のあたりで沢山の竹が目印だ。"));
+                lore.addAll(Arrays.asList("§a自宅のそばにいるYuzumochiiさんに届けに行こう。", "§aX:-1100 Z:-100のあたりで沢山の竹が目印だ。"));
                 break;
             case 3:
                 lore.addAll(Arrays.asList("§a8MA8さんに届けに行こう。", "§a塵谷台駅地下連絡通路内で一人佇んでいるらしい...。"));
